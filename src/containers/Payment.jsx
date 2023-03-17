@@ -8,7 +8,7 @@ const Payment = ({history}) => {
     const { state, addNewOrder } = useContext(AppContext);
     const { cart, buyer } = state;
     const navigate = useNavigate();
-    
+
     const paypalOptions ={ 
         clientId: 'AS12EX0JnMEOU0B9vtbHIj1oad-hTI3GhonGA1srCBj2JWsQyZ4NzEv1OW3kwpIfvGCT1Lhkp-XSlC14',
         intent: 'capture',
@@ -56,10 +56,9 @@ const Payment = ({history}) => {
                         paypalOptions={paypalOptions}
                         buttonStyles={buttonStyles}
                         amount={handleSumTotal()}
-                        onPaymentStart={() => console.log('start Payment')}
-                        onPaymentSuccess={data => handlePaymentSuccess(data)}
-                        onPaymentError={error => console.log(error)}
-                        onPaymentCancel={data => console.log(data)}
+                        onSuccess={data => handlePaymentSuccess(data)}
+                        onError={error => console.log(error)}
+                        onCancel={data => console.log(data)}
                     />
                 </div>
             </div>
