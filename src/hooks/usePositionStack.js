@@ -10,16 +10,15 @@ const usePositionStack = () => {
     const params = new URLSearchParams({
         access_key: '5f3c190cab32052b35b7d76906d417e7',
         query: '1600 Pennsylvania Ave NW, Washington, Washington DC, Estados Unidos'
-      }).toString();
+    }).toString();
 
     useEffect(() => {
-        async function fetchData() {
+        (async () => {
             const response = await axios(`${url}?${params}`)
             const result = [response.data.data[0].latitude,response.data.data[0].longitude]
             console.log(result);
             setMap(result)
-        }
-        fetchData();
+        })()
     }, []); 
 
     return map;
