@@ -30,11 +30,18 @@ const useInitialState = () => {
         })
     }
 
+    const addNewLocation = payload => {
+        setState({
+            ...state,
+            location: payload
+        })
+    }
     return {
         addToCart,
         removeFromCart,
         addToBuyer,
         addNewOrder,
+        addNewLocation,
         state,
     }
 }

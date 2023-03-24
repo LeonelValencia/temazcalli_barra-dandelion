@@ -1,12 +1,12 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-// import Icon from '../assets/marker.png'
 import { Icon } from 'leaflet'
 import '../styles/components/Map.css';
 
-const position = [51.505, -0.09]
+const position = [38.897675, -77.036547]
 
 const ChartMap = () => {
+    // console.log(data);
     return (
         <MapContainer center={position} zoom={13}>
             <TileLayer
@@ -17,10 +17,8 @@ const ChartMap = () => {
                 <Popup icon={Icon}>
                     A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>
-
             </Marker>
         </MapContainer>
-
     );
 };
 export default ChartMap;
