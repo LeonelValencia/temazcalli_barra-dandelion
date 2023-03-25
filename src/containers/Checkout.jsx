@@ -1,9 +1,15 @@
 import React, {useContext} from 'react';
 import { Link } from "react-router-dom";
 import AppContex from '../context/AppContext';
+import Helmet from 'react-helmet';
 import '../styles/components/Checkout.css'
 
 const Checkout = () => {
+    <>
+    <Helmet>
+        <title>Lista de productos - Merch</title>
+    </Helmet>
+    </>
     const { state, removeFromCart } = useContext(AppContex);
     const { cart } = state;
 
