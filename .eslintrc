@@ -36,5 +36,6 @@
     "parser": "@babel/eslint-parser",
     "parserOptions": {
         "requireConfigFile": false
-    }
+    },
+    "arrow-body-style": ["error", "always"]
 }

@@ -1,8 +1,10 @@
 .Products-items {
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(1, 1fr);
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
-  display: grid;
+  display: grid; */
+  max-width: 428px;
+  margin: 0 auto;
 }
 .Products-item {
   text-decoration: none;
@@ -10,6 +12,8 @@
   border-radius: 5px;
   margin: 0 0 20px 0;
   position: relative;
+  border: 1px solid black;
+  text-align: center;
 }
 .Products-item-info {
   padding: 10px;

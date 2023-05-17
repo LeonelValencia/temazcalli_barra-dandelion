@@ -7,7 +7,7 @@ const Home = () => {
     return ( 
         <>
         <Helmet>
-            <title>Platzi Conf Merch - Productos</title>  
+            <title>Temazcalli - Productos</title>  
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:site" content="@LeonelV12038172"/>
             <meta name="twitter:creator" content="@LeonelV12038172"/>
