@@ -1,0 +1,10 @@
+.Extra {
+    text-align: center;
+    color: brown;
+}
+.Extra ul{
+    list-style: none;
+}
+.Extra .redes svg {
+    width: 30px;
+}
